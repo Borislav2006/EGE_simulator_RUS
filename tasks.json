@@ -1,0 +1,114 @@
+{
+    "task_1": {
+        "quiz_1": {
+            "quiz_number": 1,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_1.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_1",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Что", "Потому что", "Так как", "Но"],
+            "correct_answer_to_the_quiz": 0,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_2": {
+            "quiz_number": 2,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_2.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_2",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Разве", "Именно", "Только", "Неужели"],
+            "correct_answer_to_the_quiz": 1,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_3": {
+            "quiz_number": 3,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_3.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_3",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Но", "Потому что", "Когда", "Только"],
+            "correct_answer_to_the_quiz": 2,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_4": {
+            "quiz_number": 4,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_4.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_4",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Ней", "Книге", "Него", "Которой"],
+            "correct_answer_to_the_quiz": 3,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_5": {
+            "quiz_number": 5,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_5.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_5",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Такой", "Нашей", "Моей", "Их"],
+            "correct_answer_to_the_quiz": 0,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_6": {
+            "quiz_number": 6,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_6.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_6",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Поэтому", "Конечно", "Думаю", "Полагаю"],
+            "correct_answer_to_the_quiz": 1,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_7": {
+            "quiz_number": 7,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_7.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_7",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Как", "Не", "Это", "Просто"],
+            "correct_answer_to_the_quiz": 2,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_8": {
+            "quiz_number": 8,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_8.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_8",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Как раз", "Именно", "Точно", "Лишь"],
+            "correct_answer_to_the_quiz": 3,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_9": {
+            "quiz_number": 9,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_9.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_9",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Его", "Эту", "Какую-то", "Всю"],
+            "correct_answer_to_the_quiz": 0,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_10": {
+            "quiz_number": 10,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_10.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_10",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Некоторой", "Другой", "Какой-то", "Себя"],
+            "correct_answer_to_the_quiz": 1,
+            "quiz_explanation": null,
+            "quiz_note": null
+        },
+        "quiz_11": {
+            "quiz_number": 11,
+            "quiz_condition": "Tasks_materials\\conditions_of_quizzes\\task_1\\quiz_11.png",
+            "quiz_question": "Tasks_materials\\questions_for_quizzes\\task_1\\quiz_11",
+            "photo_of_answer_options": null,
+            "quiz_answer_options": ["Сгоряча", "Назло", "Вовсе", "Кое-где"],
+            "correct_answer_to_the_quiz": 2,
+            "quiz_explanation": null,
+            "quiz_note": null
+        }
+    }
+}
