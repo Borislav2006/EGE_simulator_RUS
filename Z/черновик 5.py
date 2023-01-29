@@ -1,8 +1,20 @@
-import re
+import difflib as df
 
-string = "/7867/htht/1g89/htrhr/4523/"
-# re.search(pattern, string) — Найти в строке string
-# первую строчку, подходящую под шаблон pattern
-print(re.search(r'/\d{4}/', string)[0])
+txt1 = """Модуль difflib в основном используется, для сравнения 
+текстовых последовательностей и включает в себя классы и функции,
+которые создают отчеты в нескольких распространенных форматов, 
+включая HTML."""
 
-from string import ascii_lowercase, ascii_uppercase, digits
+txt2 = """Модуль `difflib` может быть использован, для сравнения 
+текстовых последовательностей и включает в себя функции,
+которые создают отчеты в нескольких распространенных форматах, 
+включая HTML."""
+
+# Перед тем как сравнивать, разобьем
+# тексты на строки
+txt1_list = txt1.splitlines()
+txt2_list = txt2.splitlines()
+
+d = df.Differ()
+diff = d.compare(txt1_list, txt2_list)
+print('\n'.join(diff))

@@ -28,7 +28,7 @@ def read_text_file(file):
     return text_in_file
 
 
-def open_theory_photo(lesson_name, material_name):
+def open_photo(lesson_name, material_name):
     """ Функция, возвращающая питоновскую фотографию """
     return open(f"Materials_PYTHON\\Theory Pictures\\{lesson_name}\\{material_name}.png", mode="rb")
 

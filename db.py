@@ -49,14 +49,26 @@ class Database:
                 check_sub = row[0]
             return check_sub
 
-    def set_task_number(self, human_id, task_number):
+    def set_index_correct_answer_to_the_quiz(self, human_id, index_correct_answer):
         with self.connection:
-            self.cursor.execute("UPDATE `users` SET `task_number` = ? WHERE `human_id` = ?", (task_number, human_id,))
+            self.cursor.execute("UPDATE `users` SET `index_correct_answer` = ? WHERE `human_id` = ?", (index_correct_answer, human_id,))
             self.connection.commit()
 
-    def get_task_number(self, human_id):
+    def get_index_correct_answer_to_the_quiz(self, human_id):
         with self.connection:
-            result = self.cursor.execute("SELECT `task_number` FROM `users` WHERE `human_id` = ?", (human_id,)).fetchall()
+            result = self.cursor.execute("SELECT `index_correct_answer` FROM `users` WHERE `human_id` = ?", (human_id,)).fetchall()
+            for row in result:
+                check_sub = row[0]
+            return check_sub
+
+    def set_task_history(self, human_id, task_history):
+        with self.connection:
+            self.cursor.execute("UPDATE `users` SET `task_history` = ? WHERE `human_id` = ?", (task_history, human_id,))
+            self.connection.commit()
+
+    def get_task_history(self, human_id):
+        with self.connection:
+            result = self.cursor.execute("SELECT `task_history` FROM `users` WHERE `human_id` = ?", (human_id,)).fetchall()
             for row in result:
                 check_sub = row[0]
             return check_sub

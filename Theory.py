@@ -1,7 +1,7 @@
 import json
 import jmespath
 from pprint import pprint
-from random import choice
+from random import choice, shuffle
 from trash import rubbish
 
 Data = {
@@ -84,7 +84,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_10": {
@@ -93,7 +93,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_11": {
@@ -102,7 +102,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_12": {
@@ -111,7 +111,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_13": {
@@ -120,7 +120,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_14": {
@@ -129,7 +129,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_15": {
@@ -138,7 +138,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_16": {
@@ -147,7 +147,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_17": {
@@ -156,7 +156,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_18": {
@@ -165,7 +165,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_19": {
@@ -174,7 +174,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_20": {
@@ -183,7 +183,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_21": {
@@ -192,7 +192,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_22": {
@@ -201,7 +201,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_23": {
@@ -210,7 +210,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_24": {
@@ -219,7 +219,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_25": {
@@ -228,7 +228,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_26": {
@@ -237,7 +237,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_27": {
@@ -246,7 +246,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_28": {
@@ -255,7 +255,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_29": {
@@ -264,7 +264,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_30": {
@@ -273,7 +273,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_31": {
@@ -282,7 +282,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_32": {
@@ -291,7 +291,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_33": {
@@ -300,7 +300,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_34": {
@@ -309,7 +309,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_35": {
@@ -318,7 +318,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_36": {
@@ -327,7 +327,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_37": {
@@ -336,7 +336,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_38": {
@@ -345,7 +345,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_39": {
@@ -354,7 +354,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_40": {
@@ -363,7 +363,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_41": {
@@ -372,7 +372,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_42": {
@@ -381,7 +381,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_43": {
@@ -390,7 +390,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_44": {
@@ -399,7 +399,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_45": {
@@ -408,7 +408,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_46": {
@@ -417,7 +417,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_47": {
@@ -426,7 +426,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_48": {
@@ -435,7 +435,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_49": {
@@ -444,7 +444,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_50": {
@@ -453,7 +453,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 1,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_51": {
@@ -462,7 +462,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 2,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_52": {
@@ -471,7 +471,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 3,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         },
         "quiz_53": {
@@ -480,7 +480,7 @@ Data = {
             "photo_of_answer_options": None,
             "quiz_answer_options": ["", "", "", ""],
             "correct_answer_to_the_quiz": 0,
-            "quiz_explanation": None, 
+            "quiz_explanation": None,
             "quiz_note": None
         }
     }
@@ -488,5 +488,3 @@ Data = {
 
 
 pprint(choice(jmespath.search("task_1.*", Data)))
-m = json.loads("[]")
-print(m)

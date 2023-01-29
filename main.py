@@ -18,7 +18,9 @@ async def start(message: types.Message):
 async def main_work(message: types.Message):
     if message.text == "Тренироваться 🥸":
         async def send_main_menu(report):
-            await ms.output_text(read_text_file("Information\\USE_task_numbers"), report, "main_menu")
+            await bot.send_photo(report.from_user.id, open("Information/USE_tasks_materials.png", mode="rb"),
+                                 caption="<b>Выберите номер из ЕГЭ по русскому языку, который хотите потренировать:</b>",
+                                 parse_mode="HTML", reply_markup=nav.main_menu)
 
         await send_main_menu(message)
 

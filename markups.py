@@ -4,11 +4,9 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 
 info_menu = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 
-btn_sub = KeyboardButton("Статистика ℹ️")
 btn_list = KeyboardButton("Тренироваться 🥸")
 
 info_menu.add(btn_list)
-info_menu.add(btn_sub)
 
 # Виды викторины
 
@@ -26,7 +24,7 @@ quiz_menu.insert(btn_main_back)
 
 # --- Python меню ---
 
-main_menu = InlineKeyboardMarkup(row_width=5)
+main_menu = InlineKeyboardMarkup(row_width=7)
 
 btn_number_1 = InlineKeyboardMarkup(text="№1", callback_data="btn_number_1")
 btn_number_2 = InlineKeyboardMarkup(text="№2", callback_data="btn_number_2")
@@ -50,6 +48,7 @@ btn_number_19 = InlineKeyboardMarkup(text="№19", callback_data="btn_number_19"
 btn_number_20 = InlineKeyboardMarkup(text="№20", callback_data="btn_number_20")
 btn_number_21 = InlineKeyboardMarkup(text="№21", callback_data="btn_number_21")
 btn_number_22 = InlineKeyboardMarkup(text="№22", callback_data="btn_number_22")
+btn_number_23 = InlineKeyboardMarkup(text="№23", callback_data="btn_number_23")
 btn_number_24 = InlineKeyboardMarkup(text="№24", callback_data="btn_number_24")
 btn_number_25 = InlineKeyboardMarkup(text="№25", callback_data="btn_number_25")
 btn_number_26 = InlineKeyboardMarkup(text="№26", callback_data="btn_number_26")
@@ -76,6 +75,7 @@ main_menu.insert(btn_number_19)
 main_menu.insert(btn_number_20)
 main_menu.insert(btn_number_21)
 main_menu.insert(btn_number_22)
+main_menu.insert(btn_number_23)
 main_menu.insert(btn_number_24)
 main_menu.insert(btn_number_25)
 main_menu.insert(btn_number_26)
