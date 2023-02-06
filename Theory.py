@@ -487,4 +487,4 @@ Data = {
 }
 
 
-pprint(choice(jmespath.search("task_1.*", Data)))
+print(choice(jmespath.search("task_1.*", Data)))

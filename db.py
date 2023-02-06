@@ -23,13 +23,13 @@ class Database:
             result = self.cursor.execute("SELECT * FROM `users` WHERE `human_id` = ?", (human_id,)).fetchall()
             return bool(len(result))
 
-    def set_list_of_quizzes(self, human_id, task_number, list_of_quizzes):
+    def set_list_of_unsolved_quizzes(self, human_id, task_number, list_of_quizzes):
         """ Добавление списка, состоящего из номеров викторин, неверно решенных викторин, в бд """
         with self.connection:
             self.cursor.execute(f"UPDATE `users` SET `task_{task_number}` = ? WHERE `human_id` = ?", (list_of_quizzes, human_id,))
             self.connection.commit()
 
-    def get_list_of_quizzes(self, human_id, task_number):
+    def get_list_of_unsolved_quizzes(self, human_id, task_number):
         """ Получение списка, состоящего из номеров, неверно решенных викторин, из бд """
         with self.connection:
             result = self.cursor.execute(f"SELECT `task_{task_number}` FROM `users` WHERE `human_id` = ?", (human_id,)).fetchall()
